@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================================================*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    width: 1278px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e7eeea;
+    padding-left: 48px;
+    padding-right: 44px;
+    box-shadow: 0px 5px 3px #dcdcdc;
+}
+
+.header ul{
+    display: flex;
+}
+
+.header ul li a{
+    display: block;
+    padding: 8px;
+    color: #37523d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header ul li a:hover{
+    color: #89ce98;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+
+.content-item{
+    width: 602px;
+}
+
+.content h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.content p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+
+.content img{
+    margin-bottom: 22px;
+}
+
+.footer{
+    height: 56px;
+    background: #37523d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+}
+
+.footer ul li a{
+    display: block;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    border-bottom: 2px solid #ffffff;
+}

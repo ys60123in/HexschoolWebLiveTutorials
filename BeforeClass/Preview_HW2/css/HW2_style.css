@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================================================*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: PingFang TC, Helvetica, sans-serif;
+}
+
+.container-top{
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.logo{
+    display: block;
+    height: 40px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.header ul li a:not(.shopping-cart){
+    display: block;
+    color: #3F5D45;
+    font-size: 16px;
+    padding: 7px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.header ul li a:not(.shopping-cart):hover{
+    border-bottom: 2px solid #3F5D45;
+}
+
+.header ul li .shopping-cart{
+    display: block;
+    margin-left: 49px;
+}
+
+.banner{
+    margin-bottom: 60px;
+}
+
+.banner img{
+    display: block;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.menu{
+    min-width: 300px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.menu h2{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #3F5D45;
+    color: white;
+    text-align: center;
+}
+
+.menu ul li a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu ul li a:hover{
+    background: #EAF0ED;
+}
+
+.menu-selected-bg{
+    background: #EAF0ED;
+}
+
+.list{
+    font-size: 20px;
+    color: #37523d;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li{
+    width: 300px;
+    margin: auto auto 20px 20px;
+}
+
+.list li img{
+    display: block;
+}
+
+.list-item{
+    position: relative;
+}
+  
+.highlight{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 16px;
+    color: #EAF0ED;
+    background: #3F5D45;
+    font-weight: bold;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    letter-spacing: 4px;
+}
+
+.favorite{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+.item-description{
+    display: flex;
+}
+
+.productName{
+    display: block;
+    width: 173px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 24px;
+}
+
+.price{
+    display: block;
+    width: 127px;
+    border-right: 1px solid#EAF0ED;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.shopping-cart-btn{
+    display: block;
+    color: #3F5D45;
+    text-decoration: none;
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #EAF0ED;
+    text-align: center;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.shopping-cart-btn:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.page ul{
+    display: flex;
+}
+
+.page ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #EAF0ED;
+    font-size: 20px;
+    text-decoration: none;
+    color:#3F5D45;
+}
+
+.page ul li a:not(.page-arrow):hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+.page ul li a:not(.page-arrow).page-selected{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
