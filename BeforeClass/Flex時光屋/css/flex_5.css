@@ -73,11 +73,10 @@ h2{
 .content1{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background: #e7eeea;
-    height: 168px;
     border-radius: 5px;
     margin-bottom: 45px;
+    padding: 21px 0;
 }
 
 .content1-item{
@@ -91,14 +90,9 @@ h2{
     padding-top: 10px;
 }
 
-.logo-small{ 
+.logo-small{
     width: 56px;
     height: 56px;
-    overflow: hidden;
-}
-
-.logo-small img{
-    max-width: 56px;
     display: block;
 }
 
@@ -107,9 +101,9 @@ h2{
     justify-content: space-around;
     align-items: center;
     background: #e7eeea;
-    height: 230px;
     border-radius: 5px;
     margin-bottom: 45px;
+    padding: 17px 0;
 }
 
 .content2-item{
@@ -119,22 +113,17 @@ h2{
 
 .content3{
     background: #e7eeea;
-    height: 330px;
     border-radius: 5px;
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 18px 20px;
 }
 
 .content3-item1{
     display: flex;
-    height: 138px;
 }
 
 .content3-item2{
     display: flex;
-    height: 138px;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
 
 .content3-description
@@ -142,16 +131,9 @@ h2{
     padding-top: 48px;
 }
 
-.content3 img{
-    padding: 8px;
-}
-
 .logo-big{
     width: 138px;
     height: 138px;
-    overflow: hidden;
-}
-
-.logo-big img{
-    max-width: 138px;
+    display: block;
+    margin: 8px;
 }

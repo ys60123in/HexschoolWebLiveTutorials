@@ -63,14 +63,9 @@ body{
 
 .header{
     background: #e7eeea;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
-}
-
-h2{
+    text-align: center;
+    padding: 22px 0;
     font-size: 26px;
 }
 
@@ -81,7 +76,7 @@ h2{
 }
 
 .order-content{
-    padding: 22px 16px 16px 16px;
+    padding: 22px 16px 16px;
 }
 
 .detail-panel{
@@ -101,14 +96,14 @@ h2{
 }
 
 .list-content{
-    padding: 16px 16px 0px 16px;
+    padding: 16px;
 }
 
-.list-content ul li{
+.list-content li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .order-list .focus-text{

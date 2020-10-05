@@ -58,13 +58,11 @@ body{
 }
 
 .header{
-    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #e7eeea;
-    padding-left: 48px;
-    padding-right: 44px;
+    padding: 13px 44px 13px 48px;
     box-shadow: 0px 5px 3px #dcdcdc;
 }
 
@@ -86,14 +84,8 @@ body{
 }
 
 .content{
-    display: flex;
-    justify-content: center;
-    padding-top: 78px;
-    padding-bottom: 78px;
-}
-
-.content-item{
     width: 602px;
+    margin: 78px auto;
 }
 
 .content h2{
@@ -113,11 +105,11 @@ body{
 }
 
 .footer{
-    height: 56px;
     background: #37523d;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 11px 0;
 }
 
 .footer ul{
@@ -130,6 +122,7 @@ body{
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
 .footer ul li a:hover{

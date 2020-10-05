@@ -57,7 +57,7 @@ body{
 
 .wrap{
     width: 1138px;
-    height: 808px;
+    /* height: 808px; */
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -80,8 +80,8 @@ body{
     justify-content: center;
     background-color: #e7eeea;
     box-shadow: 0px 2px 1px #dcdcdc;
-    padding-left: 34px;
     border-radius: 16px;
+    padding: 181px 0 181px 34px;
 }
 
 .content h2{

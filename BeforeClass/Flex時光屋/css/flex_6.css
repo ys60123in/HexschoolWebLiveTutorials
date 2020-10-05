@@ -65,7 +65,6 @@ body{
 .header{
     background: #e7eeea;
     height: 62px;
-    width: 878px;
     padding-left: 32px;
     padding-right: 32px;
     display: flex;
@@ -90,20 +89,16 @@ body{
 
 .content{
     background: #ffffff;
-    width: 878px;
     padding: 30px 50px 30px 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.content-panel{
+.content-description{
+    padding-left: 61px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.content-description{
-    width: 540px;
 }
 
 .content-description h2{
@@ -118,12 +113,12 @@ body{
     line-height: 24px;
 }
 
-.content-panel a{
+.content-description a{
     color: #37523d;
     font-size: 25px;
     margin-right: 8px;
 }
 
-.content-panel a:hover{
+.content-description a:hover{
     background: #acd2fe;
 }
