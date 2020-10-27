@@ -193,3 +193,15 @@ h1{
     text-decoration: none;
     border-bottom: 1px solid #fff;
 }
+
+.mr-24{
+    margin-right: 24px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
