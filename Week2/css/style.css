@@ -215,7 +215,7 @@ img{
     padding: 64px 0 80px;
 }
 
-.contact li, a{
+.contact li, .contact a{
     font-weight: 500;
     font-style: italic;
     font-size: 24px;
