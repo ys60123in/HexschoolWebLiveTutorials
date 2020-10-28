@@ -70,6 +70,7 @@ img{
     font-style: italic;
     font-size: 24px;
     line-height: 42px;
+    vertical-align: bottom;
 }
 
 .title{
@@ -104,11 +105,14 @@ img{
     background-size: cover;
     background-position: center;
     border: 1px solid #707070;
-    padding-top: 356px;
+    display: flex;
+    align-items: center;
 }
 
 .banner .container{
-    width: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner p{
@@ -119,8 +123,13 @@ img{
 }
 
 .banner ul{
+    width: 304px;
     display: flex;
     justify-content: space-between;
+}
+
+.banner ul a{
+    display: block;
 }
 
 /*about*/
@@ -137,21 +146,22 @@ img{
     color: black;
 }
 
-.personal p, .experience li{
+.personal li, .experience li{
     font-weight: 700;
     font-style: italic;
     font-size: 24px;
     line-height: 42px;
 }
 
-.splitter{
-    display: block;
+.experience{
     width: 384px;
-    border-bottom: 1px solid #000;
-    margin: 0 auto 32px;
+    margin: 0 auto;
+    padding-top: 32px;
+    border-top: 1px solid #000;
 }
 
-.list-item-disc{
+.experience li::before{
+    content: "";
     display: inline-block;
     width: 22px;
     height: 22px;
