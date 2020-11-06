@@ -1,0 +1,33 @@
+/* background-color */
+.bg-primary{
+    background-color: #AA0601;
+}
+
+.bg-secondary{
+    background-color: #fbf2f2;
+}
+
+/* text-color */
+.text-primary{
+    color: #aa0601;
+}
+
+.text-secondary{
+    color: #fbf2f2;
+}
+
+.text-danger{
+    color: #650300;
+}
+
+.text-light{
+    color: #fff;
+}
+
+.text-dark-500{
+    color: #707070;
+}
+
+.text-dark-900{
+    color: #212529;
+}

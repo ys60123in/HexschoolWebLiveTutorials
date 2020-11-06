@@ -1,0 +1,222 @@
+.footer-content{
+    padding: 36px 0 22px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-main{
+    width: 50%;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.footer-menu a:hover{
+    color: #650300;
+}
+
+.footer-contact-list li:nth-child(1){
+    margin-bottom: 17px;
+}
+
+.footer-contact-list .phone{
+    font-size: 36px;
+}
+
+.footer-contact-list .phone::before{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg") no-repeat;
+    background-size: contain;
+    margin-right: 17px;
+    vertical-align: middle;
+}
+
+.footer-contact-list .email{
+    font-size: 36px;
+}
+
+.footer-contact-list .email::before{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg") no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.footer-contact-list a:hover{
+    color: #650300;
+}
+
+.social-list{
+    width: 18.739%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright-detail{
+    display: flex;
+    padding: 24px 0 28.5px;
+}
+
+.footer-copyright-detail .logo{
+    margin-right: 38px;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy-terms{
+    width: 16.937%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy-terms a{
+    font-size: 14px;
+}
+
+.policy-terms a:hover{
+    color: #650300;
+}
+
+@media (max-width:992px){
+    .footer-content{
+        padding: 40px 0 27px;
+    }
+    
+    .footer-main{
+        width: 63.913%;
+    }
+    
+    .footer-menu{
+        margin-bottom: 24px;
+    }
+    
+    .footer-contact-list li:nth-child(1){
+        margin-bottom: 11px;
+    }
+
+    .footer-contact-list .phone{
+        font-size: 20px;
+    }
+    
+    .footer-contact-list .phone::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    
+    .footer-contact-list .email{
+        font-size: 20px;
+    }
+    
+    .footer-contact-list .email::before{
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+    }
+    
+    .social-list{
+        width: 17.391%;
+    }
+
+    .social-list img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .footer-copyright-detail{
+        padding: 24px 0 40px;
+    }
+
+    .footer-copyright-detail .logo{
+        display: none;
+    }
+    
+    .policy-terms{
+        width: 21.739%;
+    }
+}
+
+@media (max-width:768px){
+    .footer-content{
+        padding: 24px 0 21px;
+    }
+    
+    .footer-main{
+        width: 60%;
+    }
+    
+    .footer-menu{
+        display: none;
+    }
+
+    .footer-contact-list li:nth-child(1){
+        margin-bottom: 7px;
+    }
+    
+    .footer-contact-list .phone{
+        font-size: 16px;
+    }
+    
+    .footer-contact-list .phone::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    
+    .footer-contact-list .email{
+        font-size: 16px;
+    }
+    
+    .footer-contact-list .email::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+    
+    .social-list{
+        width: 35%;
+    }
+    
+    .footer-copyright-detail{
+        padding: 24px 0 40px;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .footer-copyright-detail .logo{
+        display: block;
+        margin: 0;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .copyright p{
+        font-size: 14px;
+    }
+    
+    .policy-terms{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+}

@@ -1,0 +1,50 @@
+/* 全域 border box */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+/* img RWD必設 */
+img{
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 690px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        max-width: 345px;
+    }
+}
+
+.text-medium{
+    font-weight: 500;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.text-black-italic{
+    font-weight: 900;
+    font-style: italic;
+}

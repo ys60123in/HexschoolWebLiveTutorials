@@ -1,0 +1,603 @@
+/* banner */
+.banner{
+    height: 840px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slogan-prefix{
+    font-size: 36px;
+}
+
+.slogan{
+    font-size: 64px;
+    line-height: 1.5;
+}
+
+@media (max-width:992px){
+    .banner{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+    }
+
+    .slogan-prefix{
+        font-size: 20px;
+    }
+    
+    .slogan{
+        font-size: 48px;
+    }
+}
+
+@media (max-width:767px){
+    .banner{
+        height: 394px;
+    }
+
+    .slogan-prefix{
+        font-size: 16px;
+    }
+    
+    .slogan{
+        font-size: 32px;
+    }
+}
+
+/* description */
+.description{
+    padding: 64px 0 80px;
+    margin-bottom: 64px;
+}
+
+.description h2{
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.description ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.description ul li{
+    width: 18.909%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description ul li img{
+    margin-bottom: 40px;
+}
+
+.description ul li h3{
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+@media (max-width:992px){
+    .description{
+        padding: 40px 0;
+    }
+
+    .description h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .description ul li{
+        width: 34.348%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:767px){
+    .description{
+        padding: 32px 0 12px;
+    }
+
+    .description h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .description ul{
+        justify-content: center;
+    }
+
+    .description ul li{
+        width: 237px;
+    }
+}
+
+/* classic-glasses */
+.classic-glasses h2{
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.products li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.products li img{
+    width: 57.727%;
+    margin-right: 30px;
+}
+
+.products li h3{
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.products li:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.products li:nth-child(2) img{
+    margin-right: 0;
+}
+
+.products li:nth-child(2) h3{
+    margin-right: 30px;
+}
+
+.optical::before{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 37.73px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond.svg") no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.sunglasses::before{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun.svg") no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.functional::before{
+    content: "";
+    display: inline-block;
+    width: 35.2px;
+    height: 48px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder.svg") no-repeat;
+    margin-right: 8px;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+@media (max-width:992px){
+    .classic-glasses h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .products{
+        margin-bottom: 32px;
+    }
+    
+    .products li{
+        margin-bottom: 8px;
+    }
+
+    .products li img{
+        width: 56.522%;
+    }
+
+    .products li h3{
+        font-size: 28px;
+    }
+    
+    .products li:nth-child(2){
+        flex-direction: row;
+    }
+    
+    .products li:nth-child(2) img{
+        margin-right: 30px;
+    }
+    
+    .products li:nth-child(2) h3{
+        margin-right: 0;
+    }
+
+    .optical::before{
+        width: 32px;
+        height: 25.16px;
+    }
+    
+    .sunglasses::before{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .functional::before{
+        width: 23px;
+        height: 32px;
+    }
+}
+
+@media (max-width:767px){
+    .classic-glasses h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .products{
+        margin-bottom: 32px;
+    }
+
+    .products li{
+        position: relative;
+        justify-content: center;
+    }
+    
+    .products li img{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .products li h3{
+        position: absolute;
+        color: #ffffff;
+    }
+    
+    .products li:nth-child(2) img{
+        margin-right: 0;
+    }
+
+    .optical::before{
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-white.svg") no-repeat;
+    }
+    
+    .sunglasses::before{
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-white.svg") no-repeat;
+    }
+    
+    .functional::before{
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-white.svg") no-repeat;
+    }
+}
+
+/* designs */
+.designs{
+    padding: 64px 0 80px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 64px;
+}
+
+.designs h2{
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.designs ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.designs ul li{
+    width: 48.649%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.designs ul li::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.designs ul li h3{
+    font-size: 72px;
+    line-height: 1.5;
+    position: absolute;
+}
+
+@media (max-width:992px){
+    .designs{
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+
+    .designs h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .designs ul li h3{
+        font-size: 32px;
+    }
+}
+
+@media (max-width:767px){
+    .designs{
+        padding: 32px 0 16px;
+        margin-bottom: 32px;
+    }
+
+    .designs h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .designs ul{
+        flex-direction: column;
+    }
+
+    .designs ul li{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+/* customer-recommend */
+.customer-recommend h2{
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.recommends{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.recommends li{
+    width: 22.973%;
+}
+
+.recommend-content{
+    padding: 14px 16px 15px;
+    border: 1px solid #DEE2E6;
+}
+
+.recommend-content .customer-name{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+}
+
+.recommend-content .recommend{
+    margin-bottom: 10px;
+}
+
+@media (max-width:992px){
+    .customer-recommend h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .recommends{
+        margin-bottom: 13px;
+    }
+    
+    .recommends li{
+        width: 47.826%;
+        margin-bottom: 28px;
+    }
+    
+    .recommend-content{
+        padding: 16px;
+    }
+    
+    .recommend-content .customer-name{
+        margin-bottom: 16px;
+    }
+    
+    .recommend-content .recommend{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width:767px){
+    .customer-recommend h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .recommends{
+        margin-bottom: 16px;
+    }
+    
+    .recommends li{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+/* contact */
+.contact{
+    padding: 64px 0 80px;
+}
+
+.contact-content{
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.contact h2{
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact .preface{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-element{
+    margin-bottom: 16px;
+}
+
+.contact-element label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.contact-element input, .contact-element textarea{
+    display: block;
+    padding: 14px 16px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #000;
+}
+
+.contact-element-checkbox{
+    margin-bottom: 42px;
+}
+
+.contact-element-checkbox input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.contact-element-submit{
+    display: block;
+    margin: 0 auto;
+    padding: 16px 143px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-element-submit:hover{
+    background-color: #650300;
+}
+
+@media (max-width:992px){
+    .contact{
+        padding: 40px 0 48px;
+    }
+    
+    .contact-content{
+        max-width: 450px;
+    }
+    
+    .contact h2{
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    
+    .contact .preface{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .contact-element{
+        margin-bottom: 8px;
+    }
+    
+    .contact-element label{
+        margin-bottom: 2px;
+    }
+    
+    .contact-element input, .contact-element textarea{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .contact-element-checkbox{
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .contact-element-checkbox label{
+        font-size: 14px;
+        display: block;
+    }
+    
+    .contact-element-checkbox input{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .contact-element-submit{
+        padding: 8px 78px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px){
+    .contact{
+        padding: 32px 0 40px;
+    }
+    
+    .contact-content{
+        max-width: 100%;
+    }
+    
+    .contact h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact .preface{
+        margin-bottom: 8px;
+    }
+    
+    .contact-element label{
+        font-size: 14px;
+    }
+    
+    .contact-element input, .contact-element textarea{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .contact-element-checkbox{
+        margin-bottom: 24px;
+    }
+
+    .contact-element-submit{
+        padding: 8px 54.5px;
+    }
+}
