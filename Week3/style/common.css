@@ -33,7 +33,6 @@ img{
 @media (max-width:767px){
     .container{
         max-width: 345px;
-        padding: 0 15px;
     }
 }
 
