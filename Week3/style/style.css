@@ -419,6 +419,10 @@
         width: 47.826%;
         margin-bottom: 28px;
     }
+
+    .recommends li img{
+        width: 100%;
+    }
     
     .recommend-content{
         padding: 16px;
