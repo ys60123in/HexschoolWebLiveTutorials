@@ -1,0 +1,139 @@
+.blog-header{
+    @include mobile{
+        display: none;
+    }
+}
+
+.blog-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 43.604%;
+    &-item{
+        width: 100%;
+        a{
+            display: block;
+            padding: 15px 0;
+            &:hover{
+                color: $color-primary-hover;
+            }
+        }
+    }
+    @include pad{
+        width: 53.333%;
+    }
+}
+
+.search{
+    @include link-with-background(54px, 54px, "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-search.svg");
+}
+
+.blog-articles{
+    padding-top: 82px;
+    margin-bottom: 40px;
+    @include pad{
+        padding-top: 40px;
+        margin-bottom: 72px;
+    }
+    @include mobile{
+        padding-top: 24px;
+        margin-bottom: 13px;
+    }
+}
+
+.article-list{
+    display: flex;
+    flex-direction: column;
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        &-header{
+            width: 57.207%;
+        }
+        &-body{
+            width: 40.09%;
+            position: relative;
+            .posting-time{
+                color: #555555;
+            }
+            &-description{
+                color: #555555;
+                padding-top: 24px;   
+            }
+            .more{
+                display: block;
+                font-size: 36px;
+                color: $color-primary-dark;
+                font-weight: 900;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                &:hover, &:active{
+                    color: $color-primary;
+                }
+            }
+        }
+        &-title{
+            font-size: 32px;
+        }
+        &-subtitle{
+            font-size: 20px;
+        }
+    }
+    @include pad{
+        &-item{
+            margin-bottom: 32px;
+            &-header{
+                width: 47.826%;
+            }
+            &-body{
+                width: 47.667%;
+                .posting-time{
+                    font-size: 14px;
+                }
+                &-description{
+                    padding-top: 16px;
+                    font-size: 14px;
+                }
+                .more{
+                    display: inline;
+                    font-size: 14px;
+                    color: #555555;
+                    font-weight: 700;
+                    position: relative;
+                    &:hover, &:active{
+                        color: $color-dark;
+                    }
+                }
+            }
+            &-title{
+                font-size: 20px;
+            }
+            &-subtitle{
+                font-size: 16px;
+            }
+        }
+    }
+    @include mobile{
+        &-item{
+            margin-bottom: 26px;
+            flex-direction: column;
+            &-header{
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            &-body{
+                width: 100%;
+                &-description{
+                    display: none;
+                }
+            }
+            &-title{
+                font-size: 16px;
+            }
+            &-subtitle{
+                font-size: 14px;
+            }
+        }
+    }
+}

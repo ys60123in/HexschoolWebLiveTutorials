@@ -1,0 +1,187 @@
+.series-menu{
+    max-width: 1386px;
+    display: flex;
+    margin: 0 auto;
+    &-item{
+        width: 33.333333%;
+        border: 1px solid lighten($color-dark, 87);
+        a{
+            font-size: 42px;
+            display: block;
+            padding: 24px 0 8px;
+            border-bottom: 16px solid transparent;
+            color: $color-dark;
+            text-align: center;
+            &:hover, &:active, &.actived{
+                border-bottom: 16px solid $color-primary;
+            }
+        }
+    }
+    @include pad{
+        width: 100%;
+        &-item{
+            a{
+                font-size: 28px;
+                padding: 16px 0 8px;
+                border-bottom: 8px solid transparent;
+                &:hover, &:active, &.actived{
+                    border-bottom: 8px solid $color-primary;
+                }
+            }
+        }
+    }
+    @include mobile{
+        &-item{
+            a{
+                font-size: 14px;
+                padding: 8px 0 4px;
+                border-bottom: 4px solid transparent;
+                &:hover, &:active, &.actived{
+                    border-bottom: 4px solid $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.series-optical::before{
+    @include left-side-image(48px, 37.73px, "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-black.svg", 8px, baseline);
+    @include pad{
+        width: 32px;
+        height: 25.16px;
+    }
+    @include mobile{
+        width: 14.99px;
+        height: 11.78px;
+        margin-right: 4.12px;
+    }
+}
+
+.series-sunglasses::before{
+    @include left-side-image(48px, 48px, "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-black.svg", 8px, baseline);
+    @include pad{
+        width: 32px;
+        height: 32px;
+    }
+    @include mobile{
+        width: 14px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}
+
+.series-functional::before{
+    @include left-side-image(35.2px, 48px, "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-black.svg", 8px);
+    @include pad{
+        width: 23px;
+        height: 32px;
+    }
+    @include mobile{
+        width: 10.77px;
+        height: 14.99px;
+        margin-right: 4.27px;
+    }
+}
+
+.series-banner{
+    display: flex;
+    justify-content: space-between;
+    height: 309px;
+    margin-bottom: 88px;
+    img{
+        height: 100%;
+    }
+    @include pad{
+        height: 240px;
+        margin-bottom: 40px;
+    }
+    @include mobile{
+        height: 144px;
+        margin-bottom: 30px;
+    }
+}
+
+.series-products-title{
+    font-size: 42px;
+    text-align: center;
+    @include pad{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 20px;
+    }
+}
+
+.series-products-subtitle{
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    @include pad{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    @include mobile{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.series-products-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item{
+        width: 22.973%;
+        margin-bottom: 104px;
+        &-header{
+            width: 100%;
+            height: 164px;
+        }
+        &-body{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 24px;
+            }
+        }
+        &-footer{
+            display: flex;
+            .color-series{
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                margin-right: 8px;
+            }
+        }
+    }
+    @include pad{
+        margin-bottom: 33px;
+        &-item{
+            width: 47.826%;
+            margin-bottom: 72px;
+        }
+    }
+    @include mobile{
+        margin-bottom: 8px;
+        &-item{
+            width: 100%;
+            margin-bottom: 32px;
+            &-header{
+                height: 166px;
+            }
+            &-body{
+                p{
+                    font-size: 16px;
+                }
+            }
+            &-footer{
+                .color-series{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

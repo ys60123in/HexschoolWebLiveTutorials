@@ -1,0 +1,61 @@
+.common-problems-header{
+    height: 304px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 12px;
+    margin-bottom: 80px;
+    .container{
+        height: 100%;
+    }
+    @include pad{
+        padding-bottom: 9.4px;
+        margin-bottom: 40px;
+        background-position: 35% center;
+    }
+    @include mobile{
+        padding-bottom: 6.4px;
+        margin-bottom: 24px;
+        height: 143px;
+        background-position: 32% center;
+    }
+}
+
+.section-title{
+    font-size: 32px;
+    margin-bottom: 36px;
+    @include mobile{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+}
+
+.problem-list{
+    margin-bottom: 264px;
+    li{
+        margin-bottom: 40px;
+    }
+    .problem-item{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .answer{
+        padding-left: 95px;
+    }
+    @include pad{
+        margin-bottom: 64px;
+        .answer{
+            padding-left: 59px;
+        }
+    }
+    @include mobile{
+        .problem-item{
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .answer{
+            padding-left: 0px;
+            font-size: 14px;
+        }
+    }
+}
