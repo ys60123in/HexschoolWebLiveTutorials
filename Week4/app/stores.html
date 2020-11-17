@@ -1,0 +1,48 @@
+---
+title: XD眼鏡 - 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<header class="stores-header">
+    <div class="container d-flex align-items-end">
+        <div class="d-flex align-items-center">
+            <h2 class="page-title text-bold">門市據點</h2>
+            <img class="page-theme-icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-location.svg" alt="location icon">
+        </div>
+    </div>
+</header>
+<main class="container">
+    <section class="store-select-section">
+        <h5 class="select-title">選擇分店</h5>
+        <select name="branchStore" id="branchStore" class="store-select">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+            <option value="XXXX旗艦店">XXXX旗艦店</option>
+            <option value="OOOO旗艦店">OOOO旗艦店</option>
+        </select>
+    </section>
+    <section class="store-data-section">
+        <div class="card">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true" alt="分店照片" class="card-header">
+            <div class="card-body">
+                <h5 class="card-title text-bold">台北中山旗艦店</h5>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone-black.svg" alt="phone icon" class="card-list-item-icon">
+                        <p class="card-list-item-content">電話：(02)000-1234</p>
+                    </li>
+                    <li class="card-list-item">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock-black.svg" alt="clock icon" class="card-list-item-icon">
+                        <p class="card-list-item-content">營業時間：10:00-21:00</p>
+                    </li>
+                    <li class="card-list-item">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-map.svg" alt="location icon" class="card-list-item-icon">
+                        <p class="card-list-item-content">地址：台北市中山區南京東路25巷2-1號</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="https://upload.cc/i1/2020/11/13/8QhyEq.png" alt="地圖" class="store-location">
+    </section>
+</main>
