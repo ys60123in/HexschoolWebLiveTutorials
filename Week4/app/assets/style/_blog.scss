@@ -48,6 +48,7 @@
         justify-content: space-between;
         margin-bottom: 60px;
         &-header{
+            display: block;
             width: 57.207%;
         }
         &-body{
@@ -75,6 +76,9 @@
         }
         &-title{
             font-size: 32px;
+            a:hover{
+                color: $color-primary;
+            }
         }
         &-subtitle{
             font-size: 20px;
@@ -93,7 +97,7 @@
                 }
                 &-description{
                     padding-top: 16px;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
                 .more{
                     display: inline;

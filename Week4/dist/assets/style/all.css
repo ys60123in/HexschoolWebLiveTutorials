@@ -1519,6 +1519,7 @@ h1, .h1 {
             justify-content: space-between;
     margin-bottom: 60px; }
     .article-list-item-header {
+      display: block;
       width: 57.207%; }
     .article-list-item-body {
       width: 40.09%;
@@ -1540,6 +1541,8 @@ h1, .h1 {
           color: #AA0601; }
     .article-list-item-title {
       font-size: 32px; }
+      .article-list-item-title a:hover {
+        color: #AA0601; }
     .article-list-item-subtitle {
       font-size: 20px; }
   @media (max-width: 992px) {
@@ -1553,7 +1556,7 @@ h1, .h1 {
           font-size: 14px; }
         .article-list-item-body-description {
           padding-top: 16px;
-          font-size: 14px; }
+          font-size: 13px; }
         .article-list-item-body .more {
           display: inline;
           font-size: 14px;
