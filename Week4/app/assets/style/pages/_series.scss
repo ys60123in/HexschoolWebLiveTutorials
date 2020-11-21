@@ -88,10 +88,16 @@
     justify-content: space-between;
     height: 309px;
     margin-bottom: 88px;
+    li{
+        width: 49%;
+    }
     img{
         height: 100%;
     }
     @include pad{
+        li{
+            width: 50%;
+        }
         height: 240px;
         margin-bottom: 40px;
     }

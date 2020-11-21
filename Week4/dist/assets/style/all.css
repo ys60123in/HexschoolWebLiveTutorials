@@ -1208,6 +1208,9 @@ h1, .h1 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-bottom: 8px; }
         .store-data-section .card-list-item-icon {
           width: 22px;
@@ -1369,12 +1372,16 @@ h1, .h1 {
           justify-content: space-between;
   height: 309px;
   margin-bottom: 88px; }
+  .series-banner li {
+    width: 49%; }
   .series-banner img {
     height: 100%; }
   @media (max-width: 992px) {
     .series-banner {
       height: 240px;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+      .series-banner li {
+        width: 50%; } }
   @media (max-width: 767px) {
     .series-banner {
       height: 144px;

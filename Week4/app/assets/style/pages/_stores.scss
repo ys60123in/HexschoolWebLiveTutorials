@@ -76,6 +76,7 @@
             border: 1px solid lighten($color-dark, 87);
             &-item{
                 display: flex;
+                align-items: center;
                 margin-bottom: 8px;
                 &-icon{
                     width: 22px;
