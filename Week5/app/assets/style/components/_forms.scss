@@ -1,0 +1,9 @@
+.form-check-input {
+    width: 16px;
+    height: 16px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: $primary-light;
+    opacity: 1;
+}

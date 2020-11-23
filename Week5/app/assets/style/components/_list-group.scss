@@ -1,0 +1,11 @@
+.list-group-item {
+    border: 1px solid $secondary;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    &.active, &:hover{
+        color: $dark;
+        background-color: $primary-light;
+        border-color: $secondary;
+    }
+}

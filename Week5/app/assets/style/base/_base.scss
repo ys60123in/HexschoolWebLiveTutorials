@@ -1,0 +1,50 @@
+/* 全域 border box */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// .container{
+//     max-width: $container-xl;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+
+.photo-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+a.text-dark:hover, a.actived{
+    color: $primary !important;
+}
+
+.inline-code{
+    font-family: "Roboto Mono";
+    display: inline-block;
+    color: $primary;
+    background-color: $primary-light;
+}
+
+.custom-textarea{
+    font-size: 16px;
+    resize: none;
+}
+
+.user-photo{
+    width: 141px;
+    height: 141px;
+    border-radius: 2px;
+}

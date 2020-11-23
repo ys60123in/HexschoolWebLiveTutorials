@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 296px;
+    padding: 32px 0;
+}
+
+.logo{
+    a{
+        @include link-with-background(151px, 40px, "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+    }
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    a{
+        border-left: 4px solid transparent;
+        &:hover, &.actived{
+            border-left: 4px solid $primary;
+        }
+    }
+}

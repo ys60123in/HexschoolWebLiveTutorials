@@ -1,0 +1,10 @@
+.dropdown-item{
+    padding: 0.25rem 0.75rem;
+    &:hover{
+        background-color: $primary-light;
+    }
+    &:focus {
+        background-color: $primary;
+    }
+}
+

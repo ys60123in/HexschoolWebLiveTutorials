@@ -1,0 +1,7 @@
+.expandMore {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+    &.actived {
+        transform: rotate(180deg);
+    }
+}
