@@ -64,26 +64,29 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #2A8356 !default;
+$primary-light: #EDF4EE !default;
+$secondary:     #CDDDCD !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        #E3006E !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          #121212 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    "primary":       $primary,
+    "primary-light": $primary-light,
+    "secondary":     $secondary,
+    "success":       $success,
+    "info":          $info,
+    "warning":       $warning,
+    "danger":        $danger,
+    "light":         $light,
+    "dark":          $dark,
+    "gray":          $gray-600,
   ),
   $theme-colors
 );
@@ -142,7 +145,8 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 2),
+    6: ($spacer * 3),
   ),
   $spacers
 );
@@ -282,6 +286,7 @@ $font-family-base:            $font-family-sans-serif !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
+$font-size-extreme-sm:        $font-size-base * .75 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
