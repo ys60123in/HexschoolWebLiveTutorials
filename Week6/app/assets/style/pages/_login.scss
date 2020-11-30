@@ -1,0 +1,9 @@
+.login-photo{
+    height: auto;
+    @include pad{
+        height: 440px;
+    }
+    @include pc{
+        height: 730px;
+    }
+}

@@ -1,0 +1,15 @@
+.page-link {
+    border: none;
+    color: $black;
+    &:hover, &:active {
+        background-color: $white;
+        color: $primary-light;
+        text-decoration: underline;
+    }
+}
+
+.page-item.active .page-link{
+    background-color: $white;
+    color: $primary-light;
+    text-decoration: underline;
+}

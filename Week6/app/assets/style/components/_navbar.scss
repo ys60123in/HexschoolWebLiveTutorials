@@ -1,0 +1,30 @@
+.navbar-nav{
+    .nav-item{
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        background-color: #707070;
+    }
+    .nav-link{
+        color: $white;
+        &:hover, &:active, &.active{
+            background-color: $secondary;
+        }
+    }
+    @include pad{
+        .nav-item{
+            width: auto;
+            text-align: left;
+            border: none;
+            background-color: $white;
+        }
+        .nav-link{
+            color: $secondary;
+            &:hover, &:active, &.active{
+                color: $primary;
+                background-color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+---
+title: D'PERFUME - 會員登入
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+brands: true
+subscribe: false
+---
+
+<main class="container">
+    <div class="row pt-10 mb-14 mb-md-13 align-items-md-center">
+        <div class="col-md-8">
+            <img class="mb-7 mb-md-0 login-photo" src="assets/images/login1.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+            <form action="profile.html">
+                <h2 class="font-weight-bold mb-3">Log in</h2>
+                <div class="form-group">
+                    <label for="txtAccount">帳號</label>
+                    <input type="email" class="form-control" id="txtAccount" placeholder="email@example.com">
+                </div>
+                <div class="form-group mb-9">
+                    <label for="txtPassword">密碼</label>
+                    <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" class="d-block font-weight-medium">忘記密碼</a>
+                    <div class="d-flex">
+                        <input class="btn btn-outline-primary mr-2" type="button" value="註冊">
+                        <input class="btn btn-primary" type="submit" value="登入">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

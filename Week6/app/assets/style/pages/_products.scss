@@ -1,0 +1,23 @@
+.product-list{
+    &-photo{
+        width: 165px;
+        height: 165px;
+        @include pad{
+            width: 195px;
+            height: 195px;
+        }
+        @include pc{
+            width: 255px;
+            height: 255px;
+        }
+    }
+    .card{
+        &-title{
+            font-size: $h5-font-size;
+            @include pad{
+                font-size: $h4-font-size;
+            }
+        }
+    }
+}
+

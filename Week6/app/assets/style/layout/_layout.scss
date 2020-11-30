@@ -1,0 +1,31 @@
+.logo{
+    @include link-with-background(128px, 38px, "../images/d’Perfume.png");
+}
+
+.logo-white{
+    @include link-with-background(128px, 38px, "../images/d’Perfumewhite.png");
+}
+
+.copyright{
+    font-size: $font-size-sm;
+    @include pad{
+        font-size: $font-size-base;
+    }
+}
+
+.menu-cart{
+    position: relative;
+    &::after{
+        content: "3";
+        width: 16px;
+        height: 16px;
+        background-color: $primary;
+        color: $white;
+        border-radius: 50%;
+        font-size: $font-size-extreme-sm;
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        text-align: center;
+    }
+}

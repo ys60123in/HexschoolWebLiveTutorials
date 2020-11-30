@@ -1,0 +1,40 @@
+.profile-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $spacer * 2.5;
+    &-link{
+        color: $secondary;
+        border-bottom: 2px solid transparent;
+        font-weight: $font-weight-medium;
+        // font-size: $font-size-base;
+        &:hover, &:active, &.active{
+            color: $secondary;
+            text-decoration: none;
+            border-bottom: 2px solid $primary;
+        }
+    }
+    @include pad{
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 0;
+        &-item{
+            margin-bottom: $spacer * 1.5;
+        }
+        &-link{
+            font-size: $font-size-base * 0.875;
+        }
+    }
+    @include pc{
+        &-link{
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.member-detail {
+    @include pad{
+        position: absolute;
+        right: 0;
+    }
+}

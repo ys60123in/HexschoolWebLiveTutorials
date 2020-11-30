@@ -1,0 +1,6 @@
+.product-detail-description {
+    @include pad{
+        position: absolute;
+        right: 0;
+    }
+}

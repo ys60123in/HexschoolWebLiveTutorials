@@ -1,0 +1,81 @@
+/*Material Icons*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* font family */
+/* SF-Pro-Text */
+@font-face {
+    font-family: "SF-Pro-Text";
+    src: url(vendors/fonts/SF-Pro-Text/SF-Pro-Text-Light.otf) format("opentype");
+    font-weight: $font-weight-light;
+    unicode-range: U+00-024F;
+}
+@font-face {
+    font-family: "SF-Pro-Text";
+    src: url(vendors/fonts/SF-Pro-Text/SF-Pro-Text-Regular.otf) format("opentype");
+    font-weight: $font-weight-normal;
+    unicode-range: U+00-024F;
+}
+@font-face {
+    font-family: "SF-Pro-Text";
+    src: url(vendors/fonts/SF-Pro-Text/SF-Pro-Text-Medium.otf) format("opentype");
+    font-weight: $font-weight-medium;
+    unicode-range: U+00-024F;
+}
+@font-face {
+    font-family: "SF-Pro-Text";
+    src: url(vendors/fonts/SF-Pro-Text/SF-Pro-Text-Bold.otf) format("opentype");
+    font-weight: $font-weight-bold;
+    unicode-range: U+00-024F;
+}
+
+/* PingFang TC */
+@font-face {
+    font-family: "PingFang TC";
+    src: url(vendors/fonts/PingFangTC/PingFangTC-Light.ttf) format("truetype");
+    font-weight: $font-weight-light;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "PingFang TC";
+    src: url(vendors/fonts/PingFangTC/PingFangTC-Regular.ttf) format("truetype");
+    font-weight: $font-weight-normal;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "PingFang TC";
+    src: url(vendors/fonts/PingFangTC/PingFangTC-Medium.ttf) format("truetype");
+    font-weight: $font-weight-medium;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "PingFang TC";
+    src: url(vendors/fonts/PingFangTC/PingFangTC-Semibold.ttf) format("truetype");
+    font-weight: $font-weight-semibold;
+    unicode-range: U+4E00-9FFF;
+}
+
+
+/* font-size */
+.font-size-extreme-sm{
+    font-size: $font-size-extreme-sm;
+}
+
+.font-size-sm{
+    font-size: $font-size-sm;
+}
+
+.font-size-regular{
+    font-size: $font-size-base;
+}
+
+
+.outline-0{
+    outline: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+.text-prompt{
+    color: #A5A5A5;
+}

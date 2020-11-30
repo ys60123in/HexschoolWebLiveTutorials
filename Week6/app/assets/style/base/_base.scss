@@ -1,0 +1,23 @@
+/* 全域 border box */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, .h1{
+    font-size: $h1-font-size * 0.8;
+    @include pad{
+        font-size: $h1-font-size;
+    }
+}
