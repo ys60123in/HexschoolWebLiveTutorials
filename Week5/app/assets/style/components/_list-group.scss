@@ -1,11 +1,14 @@
 .list-group-item {
     border: 1px solid $secondary;
-    padding: 0.75rem;
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
     &.active, &:hover{
         color: $dark;
         background-color: $primary-light;
         border-color: $secondary;
+    }
+    &-link{
+        padding: 0.75rem;
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -8589,6 +8589,9 @@ a.text-gray:hover, a.text-gray:focus {
 .outline-0 {
   outline: none; }
 
+.list-style-disc {
+  list-style-type: disc; }
+
 /* 全域 border box */
 *,
 *::before,
@@ -8673,17 +8676,19 @@ a.text-dark:hover, a.actived {
 
 .list-group-item {
   border: 1px solid #CDDDCD;
-  padding: 0.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  padding: 0; }
   .list-group-item.active, .list-group-item:hover {
     color: #121212;
     background-color: #EDF4EE;
     border-color: #CDDDCD; }
+  .list-group-item-link {
+    padding: 0.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .page-link {
   border: 1px solid #CDDDCD; }
