@@ -1,13 +1,9 @@
 .profile-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-bottom: $spacer * 2.5;
     &-link{
         color: $secondary;
         border-bottom: 2px solid transparent;
         font-weight: $font-weight-medium;
-        // font-size: $font-size-base;
         &:hover, &:active, &.active{
             color: $secondary;
             text-decoration: none;
@@ -15,8 +11,6 @@
         }
     }
     @include pad{
-        flex-direction: column;
-        justify-content: start;
         margin-bottom: 0;
         &-item{
             margin-bottom: $spacer * 1.5;

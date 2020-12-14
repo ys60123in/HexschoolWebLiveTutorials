@@ -1,5 +1,7 @@
 @import "utils/variables";
-@import "vendors-extensions/bootstrap/bootstrap";
+@import "vendors/bootstrap/functions";
+@import "vendors-extensions/bootstrap/variables";
+@import "vendors/bootstrap/bootstrap";
 @import "utils/mixins";
 @import "utils/utilities";
 @import "base/base";

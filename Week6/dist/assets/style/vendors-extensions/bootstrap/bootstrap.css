@@ -10514,12 +10514,6 @@ button.bg-gray:focus {
 .text-capitalize {
   text-transform: capitalize !important; }
 
-.font-weight-thin {
-  font-weight: 100 !important; }
-
-.font-weight-ultralight {
-  font-weight: 200 !important; }
-
 .font-weight-light {
   font-weight: 300 !important; }
 
@@ -10529,20 +10523,11 @@ button.bg-gray:focus {
 .font-weight-normal {
   font-weight: 400 !important; }
 
-.font-weight-medium {
-  font-weight: 500 !important; }
-
-.font-weight-semibold {
-  font-weight: 600 !important; }
-
 .font-weight-bold {
   font-weight: 700 !important; }
 
 .font-weight-bolder {
   font-weight: bolder !important; }
-
-.font-weight-black {
-  font-weight: 900 !important; }
 
 .font-italic {
   font-style: italic !important; }
@@ -10637,9 +10622,6 @@ a.text-gray:hover, a.text-gray:focus {
 
 .text-decoration-none {
   text-decoration: none !important; }
-
-.text-decoration-line-through {
-  text-decoration: line-through !important; }
 
 .text-break {
   word-break: break-word !important;

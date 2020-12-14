@@ -79,3 +79,13 @@
 .text-prompt{
     color: #A5A5A5;
 }
+
+// Weight and italics
+
+.font-weight-thin       { font-weight: $font-weight-thin !important; }
+.font-weight-ultralight { font-weight: $font-weight-ultralight !important; }
+.font-weight-medium     { font-weight: $font-weight-medium !important; }
+.font-weight-semibold   { font-weight: $font-weight-semibold !important; }
+.font-weight-black      { font-weight: $font-weight-black !important; }
+
+.text-decoration-line-through { text-decoration: line-through !important; }
